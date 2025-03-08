@@ -124,7 +124,10 @@
 
     async function main() {
       alert("LINE Developers x Skooldio")
-      await liff.init({ liffId: "2007030951-YyX6j9E5" })
+      await liff.init({ 
+        liffId: "2007030951-YyX6j9E5"
+        ,withLoginOnExternalBrowser:true    
+       })
       getEnvironment()
       getUserProfile()
       sendFlexMessage()
